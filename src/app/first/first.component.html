@@ -1,0 +1,11 @@
+<strong>Je m'appelle {{ nom }}</strong>
+
+<div [hidden]="show" [style.backgroundColor]="cl"> Cours Angular </div>
+
+<button (click)="showAlert()">Click me</button>
+
+<input type="text" [(ngModel)]="nom">
+
+<hr>
+
+<app-child (msgToParent)="TraitementDuParent($event)" [isie]="nom_mastere"></app-child>
